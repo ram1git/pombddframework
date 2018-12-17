@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CVM_UAT_CUCUMBER_TESTS" parallel="false">
+    
+    <listeners>
+		<listener class-name="listeners.Testnglisten"></listener>
+</listeners>
+    
+	<test name="LOGIN_TEST">
+		<classes>
+
+			<class name="runner.Homepagerunner"/>
+			<class name="runner.Mobileproduct"/>
+			<!-- <class name="com.cvmprod.runner.navigate.NavigateRunner" />
+			<class name="com.cvmprod.runner.objective.ObjectiveRunner" />
+			<class name="com.cvmprod.runner.setfilters.SetfiltersRunner" />
+            <class name="com.cvmprod.runner.orchestration.OrchestrationRunner" />  -->
+
+
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
